@@ -90,7 +90,7 @@ int crypto_kem_enc(unsigned char *ct,
 *
 * On failure, ss will contain a pseudo-random value.
 **************************************************/
-int crypto_kem_dec(unsigned char *ss,
+int kemDec(unsigned char *ss,
                    const unsigned char *ct,
                    const unsigned char *sk)
 {
