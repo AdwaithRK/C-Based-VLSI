@@ -39,7 +39,7 @@ NOTE:   String length must be evenly divisible by 16byte (str_len % 16 == 0)
 #include <string.h> // CBC mode, for memset
 #include "aes.h"
 
-extern unsigned int aes_count;
+//extern unsigned int aes_count;
 /*****************************************************************************/
 /* Defines:                                                                  */
 /*****************************************************************************/
@@ -415,7 +415,7 @@ void Cipher(state_t* state2, uint8_t RoundKey[AES_keyExpSize])
 //  uint8_t loop, loop2;
 //  uint8_t RoundKey[AES_keyExpSize];
   state_t state[1];
-  aes_count++;
+  //aes_count++;
 //  for(loop=0;loop<4;loop++)
 //	  for(loop2=0;loop2<4;loop2++)
 //		  (*state)[loop][loop2] = (*state2)[loop][loop2];

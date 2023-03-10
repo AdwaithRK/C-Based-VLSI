@@ -14,7 +14,7 @@
 //#define OPT1
 //#define OPT2
 
-extern unsigned int keccak_count;
+//extern unsigned int keccak_count;
 
 
  #define ROL(a, offset) ((a << offset) ^ (a >> (64-offset)))
@@ -277,7 +277,7 @@ void KeccakF1600_StatePermute(uint64_t state[25])
 {
         int round;
 
-        keccak_count++;
+        //keccak_count++;
 
         uint64_t Aba, Abe, Abi, Abo, Abu;
         uint64_t Aga, Age, Agi, Ago, Agu;
